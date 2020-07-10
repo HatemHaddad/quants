@@ -17,4 +17,5 @@ print(spy.info()) # Info about index, columns , ...
 
 print(spy.shape) # Dataframe dimension
 
-print("Hello")
+spy['Simple Returns'] = (spy['Adj Close']/spy['Adj Close'].shift(1))-1
+print(spy)
