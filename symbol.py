@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import pandas_datareader as pdr
-import matplotlib.pyplot as pls
+import matplotlib.pyplot as plt
 
 """
 This function reads a symbol and returns the stock from yahoo finance.
@@ -19,3 +19,6 @@ print(spy.shape) # Dataframe dimension
 
 spy['Simple Returns'] = (spy['Adj Close']/spy['Adj Close'].shift(1))-1
 print(spy['Simple Returns'])
+
+spy['Simple Returns'].plot(figsize=(12,8))
+plt.show()
