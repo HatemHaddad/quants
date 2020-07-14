@@ -10,7 +10,7 @@ mydata = pd.DataFrame()
 for t in tikers:
     mydata[t]= pdr.data.get_data_yahoo(t,start='2020-01-01')['Adj Close']
 
-returns = np.log(mydata/mydata.shift(1))
+returns = np.log(mydata/mydata.shift(1)) # We used log returns.
 
 
 
