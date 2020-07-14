@@ -17,7 +17,7 @@ print(spy.info()) # Info about index, columns , ...
 
 print(spy.shape) # Dataframe dimension
 
-spy['Simple Returns'] = (spy['Adj Close']/spy['Adj Close'].shift(1))-1
+spy['Simple Returns'] = (spy['Adj Close']/spy['Adj Close'].shift(1))-1 # Add a column to the dataframe
 print(spy['Simple Returns'])
 
 spy['Simple Returns'].plot(figsize=(12,8))
