@@ -7,3 +7,4 @@ birthdate = date(1970,8,3) # The date class from the library datetime takes and 
 birthdate.year
 birthdate.month
 birthdate.day
+birthdate.weekday() #Monday == 0 ... Sunday == 6
